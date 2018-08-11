@@ -1,0 +1,17 @@
+{
+  "name": "react-testing-cookbook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ahmed-belhadj/react-testing-cookbook.git",
+  "author": "Ahmed Belhadj",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "expect": "^23.5.0",
+    "mocha": "^5.2.0",
+    "react-addons-test-utils": "^15.6.2"
+  }
+}
