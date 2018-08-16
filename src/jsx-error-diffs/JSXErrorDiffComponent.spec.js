@@ -12,10 +12,9 @@ describe("Component", () => {
   it("should render JSX", () => {
     const renderer = new ShallowRenderer();
     renderer.render(<Component string={randomString} />);
-    const actual = renderer.getRenderOutput();
+    const actual = renderer.getRenderOutput().props.children;
     const expected = [<h1>Hello</h1>, <h2>{randomString}</h2>];
-    console.log(actual.props.children);
-    expect(actual.type).toBe("div");
-    expect(actual.props.children).toEqual(expected);
+    console.log(actual);
+    expect(actual).toEqual(expected);
   });
 });
