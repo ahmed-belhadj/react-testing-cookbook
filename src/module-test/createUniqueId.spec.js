@@ -8,7 +8,7 @@ describe("createUniqueId", () => {
     const random = faker.random.number();
     const actual = createId(random, "Lorem ipsum dolor sit amet");
     const expected = `${random}-lorem-ipsum`;
-    expect(actual).toEqual(expected);
     console.log(actual);
+    expect(actual).toEqual(expected);
   });
 });
